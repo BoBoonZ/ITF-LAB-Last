@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function setUsername(){
+            document.getElementById("username-p").innerHTML = document.getElementById("Username").value + '\'s Gallary';
+        }
+
+        function setProfile(){
+            document.getElementById("profileIMG").style.backgroundImage = "url(" + document.getElementById('Profile').value + ")";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="avatar">
+            <div class="profile_img" id="profileIMG">
+
+            </div>
+            <div class="noti">
+                6
+            </div>
+        </div>
+        <div class="username">
+            <a href="https://itf-it66070108.vercel.app/" class="on-hover">
+            <p style="font-size: large; font-weight: 600;" id="username-p">Boriboon Chamnanphol</p></a>
+        </div>
+        <div class="input-group">
+            <div>
+                <label style="font-weight: 400;" >Username</label><input style="margin-left: 10px;" type="text" id="Username"><button style="margin-left: 10px;" id="setUsername" onclick="setUsername()">Apply</button>
+            </div>
+            <div>
+                <label style="font-weight: 400;" >Profile Image</label><input type="text" style="margin-left: 10px;" id="Profile"><button style="margin-left: 10px;" id="setProfile " onclick="setProfile()">Apply</button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/38/Free_Fire_New_Logo.svg/220px-Free_Fire_New_Logo.svg.png" class="IMG"></div> 
+            <div class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/FortniteLogo.svg/250px-FortniteLogo.svg.png" class="IMG"></div>
+            <div class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" class="IMG"></div>
+            <div class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a5/Grand_Theft_Auto_V.png/220px-Grand_Theft_Auto_V.png" class="IMG"></div>
+            <div class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Apex_legends_cover.jpg/220px-Apex_legends_cover.jpg" class="IMG"></div>
+            <div class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Facebook_logo_%282023%29.svg/150px-Facebook_logo_%282023%29.svg.png" class="IMG"></div>
+            <div class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/150px-Instagram_logo_2022.svg.png" class="IMG"></div>
+            <div class="gallery-item row-span"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Mike_Tyson_Photo_Op_GalaxyCon_Austin_2023.jpg/220px-Mike_Tyson_Photo_Op_GalaxyCon_Austin_2023.jpg" class="IMG"></div>
+            <div class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Cyberpunk_2077_box_art.jpg/220px-Cyberpunk_2077_box_art.jpg" class="IMG"></div>
+            <div class="gallery-item"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/CS2_Cover_Art.jpg/220px-CS2_Cover_Art.jpg" class="IMG"></div>
+            <!-- <div class="gallery-item"></div>
+            <div class="gallery-item"></div> -->
+        </div>
+    </div>
+</body>
+
+</html>
